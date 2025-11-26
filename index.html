@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Backyard Homes - ADU Solutions for Families</title>
+<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #2c5545 0%, #4a7c6f 100%);
+        }
+.survey-container {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-[#f8f4e9]">
+<!-- Navigation -->
+    <nav class="bg-white shadow-sm py-4">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://huggingface.co/spaces/sarabsingh/backyard-haven-builders/resolve/main/images/MediumSquareLogo.jpg" alt="Backyard Homes Logo" class="h-20 mr-2">
+<span class="text-xl font-bold text-blue-800">Backyard Homes</span>
+</div>
+<div class="hidden md:flex space-x-8">
+                    <a href="#benefits" class="text-gray-600 hover:text-blue-600 transition">Background</a>
+                    <a href="#process" class="text-gray-600 hover:text-blue-600 transition">Process</a>
+                    <a href="#related" class="text-gray-600 hover:text-blue-600 transition">Related</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition">About</a>
+<a href="#survey" class="text-gray-600 hover:text-blue-600 transition">Get Started</a>
+</div>
+                <button class="hidden" id="mobile-menu-button">
+                    <i data-feather="menu"></i>
+                </button>
+<!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center space-y-8">
+                    <button id="mobile-menu-close" class="absolute top-4 right-4">
+                        <i data-feather="x"></i>
+                    </button>
+                    <a href="#benefits" class="text-2xl text-gray-800 hover:text-blue-600 transition" onclick="closeMobileMenu()">Background</a>
+                    <a href="#process" class="text-2xl text-gray-800 hover:text-blue-600 transition" onclick="closeMobileMenu()">Process</a>
+                    <a href="#related" class="text-2xl text-gray-800 hover:text-blue-600 transition" onclick="closeMobileMenu()">Related</a>
+                    <a href="#about" class="text-2xl text-gray-800 hover:text-blue-600 transition" onclick="closeMobileMenu()">About</a>
+                    <a href="#survey" class="text-2xl text-gray-800 hover:text-blue-600 transition" onclick="closeMobileMenu()">Get Started</a>
+                </div>
+</div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Build Where You Belong</h1>
+<p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">
+                Helping Austin homeowners build ADUs that support family, income, and community—without leaving the neighborhood they love.
+</p>
+<a href="https://calendly.com/txbackyardhomes/30min" target="_blank" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 inline-block">
+                Schedule Your Free Consultation
+</a>
+</div>
+    </section>
+    <!-- Background Section -->
+<section id="benefits" class="py-20 bg-[#f1e8d9]">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-16">Background: The ADU Opportunity</h2>
+<div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-md mb-16">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">What Is an Accessory Dwelling Unit (ADU)?</h3>
+                <p class="text-gray-600">
+                    An Accessory Dwelling Unit (ADU) is a secondary housing unit located on a single-family lot—think backyard cottage, garage apartment, or tiny home. 
+                    These fully independent living spaces include their own kitchen, bathroom, and sleeping area.
+                    <div class="my-8">
+                        <img src="https://huggingface.co/spaces/sarabsingh/backyard-haven-builders/resolve/main/images/ADU Image.jpg" alt="Example of an ADU" class="rounded-lg shadow-md w-[70%] mx-auto">
+                    </div>
+<br><br>
+Thanks to recent changes in Austin’s <a href="https://www.austintexas.gov/page/home-amendments" target="_blank" class="text-blue-600 hover:underline">HOME initiative</a>, most single-family lots are now eligible for up to two additional housing units, opening new possibilities for homeowners.
+</p>
+<div class="my-8">
+    <img src="https://huggingface.co/spaces/sarabsingh/backyard-haven-builders/resolve/main/images/ADU%20rendering.png" alt="Examples of ADU designs" class="rounded-lg shadow-md w-[35%] mx-auto">
+</div>
+</div>
+<div class="text-center mb-12">
+    <h3 class="text-2xl font-bold text-gray-800">Why Add an ADU to Your Property?</h3>
+</div>
+<div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="bg-[#d4e8e2] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="users" class="text-[#2c5545] w-8 h-8"></i>
+</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Flexible Living Space</h3>
+                    <p class="text-gray-600">
+                        Create room for multigenerational living, a home office, or a private guest retreat—right in your backyard.
+</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="bg-[#d9e0d4] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="dollar-sign" class="text-[#4a5c4a] w-8 h-8"></i>
+</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Generate Income</h3>
+                    <p class="text-gray-600">
+                        Turn your ADU into a rental unit that helps offset your mortgage, build savings, or fund your retirement goals.
+</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="bg-[#e3d8c8] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="home" class="text-[#7a5c3c] w-8 h-8"></i>
+</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Increase Property Value</h3>
+                    <p class="text-gray-600">
+                    Boost your home’s value while making smarter use of the land you already own.
+</p>
+                </div>
+            </div>
+</div>
+    </section>
+<!-- Process Section -->
+<section id="process" class="py-20 bg-[#f8f4e9]">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Builder-Neutral Guidance You Can Trust</h2>
+            <p class="text-xl text-center text-gray-600 max-w-3xl mx-auto mb-16">
+                We're not builders — we're your strategic partners.<br>
+                Our goal is to help you make informed decisions every step of the way.
+</p>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="bg-[#d9e0d4] w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="map" class="text-[#4a5c4a] w-6 h-6"></i>
+</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Assess your property's ADU potential</h3>
+                    <p class="text-gray-600">
+                        Understand what's allowed and what's possible on your specific lot.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="bg-[#e0ebe8] w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="file-text" class="text-[#3a6b5b] w-6 h-6"></i>
+</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Navigate zoning and permitting</h3>
+                    <p class="text-gray-600">
+                        We simplify complex city requirements and paperwork.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="bg-[#d4e8e2] w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="dollar-sign" class="text-[#2c5545] w-6 h-6"></i>
+</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Plan realistic budgets and timelines</h3>
+                    <p class="text-gray-600">
+                        Avoid costly surprises with transparent cost projections.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="bg-[#c8e0d8] w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="users" class="text-[#3a6b5b] w-6 h-6"></i>
+</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Connect with vetted architects and builders</h3>
+                    <p class="text-gray-600">
+                        We'll match you with professionals that fit your specific goals.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-16 bg-[#e0ebe8] rounded-xl p-8 max-w-3xl mx-auto text-center">
+                <i data-feather="lightbulb" class="w-10 h-10 text-[#3a6b5b] mx-auto mb-4"></i>
+<p class="text-xl font-medium text-gray-800 italic mb-6">
+                    "We don't build — we empower you to build smarter."
+                </p>
+                <a href="https://forms.gle/QAfQZkrZLBsq9Uua7" target="_blank" class="inline-block bg-[#3a6b8f] text-white font-bold py-3 px-8 rounded-lg hover:bg-[#4a7c9f] transition duration-300">
+Let's Get Started
+                </a>
+</div>
+</div>
+    </section>
+    <!-- Related Section -->
+<section id="related" class="py-20 bg-[#e8f4f1]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-16">In The News</h2>
+            <div class="text-center space-y-4">
+                <div><a href="https://www.youtube.com/watch?v=YybqvNA8gQI" target="_blank" class="text-blue-600 hover:underline">Homeowners have success using the HOME Initiative</a></div>
+<div><a href="https://www.youtube.com/watch?v=xtA7TvsLFMI" target="_blank" class="text-blue-600 hover:underline">Austin housing initiative sparks growth of multi-home developments on single-family lots</a></div>
+</div>
+</div>
+    </section>
+<!-- About Section -->
+<section id="about" class="py-20 bg-[#f1e8d9]">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">About Backyard Homes</h2>
+<p class="text-gray-600 mb-6">
+                        We help Austin homeowners make the most of their properties.
+</p>
+                    <p class="text-gray-600 mb-6">
+                        Founded after years of experience managing complex technology projects, <strong>Backyard Homes</strong> was created to help people navigate Austin's new <strong>HOME Initiative</strong>—without confusion or sales pressure.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Our approach is <strong>builder-agnostic</strong>, <strong>research-driven</strong>, and <strong>homeowner-first</strong>. We guide families through every step of adding Accessory Dwelling Units (ADUs) to their properties, from design to permits to construction.
+</p>
+                    <p class="text-gray-600">
+                        As housing costs rise and inventory stays tight, ADUs offer an elegant way to create flexibility, generate income, and contribute to Austin's growing housing solutions.
+                    </p>
+</div>
+                <div class="md:w-1/2">
+                    <img src="https://huggingface.co/spaces/sarabsingh/backyard-haven-builders/resolve/main/images/8ae6636e-1e3b-49fc-96a7-806a99a0a666.jfif" alt="Construction site with blueprints" class="rounded-lg shadow-xl">
+</div>
+            </div>
+        </div>
+    </section>
+    <!-- Survey Section -->
+<section id="survey" class="py-20 bg-[#e8f4f1]">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="survey-container bg-white rounded-xl p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Ready to explore your ADU options? Submit a consultation intake form today.</h2>
+                <div class="text-center mb-10">
+                <a href="https://forms.gle/QAfQZkrZLBsq9Uua7" target="_blank" class="inline-block bg-[#2c5545] text-white font-bold py-3 px-8 rounded-lg hover:bg-[#3a6b5b] transition duration-300">
+Intake Form
+                    </a>
+                </div>
+                <h3 class="text-2xl font-bold text-center text-gray-800 mb-4">Want to stay informed about ADU development in Austin?</h3>
+                <p class="text-gray-600 text-center mb-6">Subscribe to our newsletter for updates, resources, and homeowner guidance.</p>
+                <div class="text-center">
+                    <a href="https://forms.gle/1STMVnvkU1gTRAfz7" target="_blank" class="inline-block bg-[#3a6b5b] text-white font-bold py-3 px-8 rounded-lg hover:bg-[#4a7c6f] transition duration-300">
+Subscribe Now
+                    </a>
+</div>
+</div>
+        </div>
+    </section>
+<!-- Footer -->
+    <footer class="bg-[#0f172a] text-white py-12">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-10">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <img src="https://huggingface.co/spaces/sarabsingh/backyard-haven-builders/resolve/main/images/MediumSquareLogo.jpg" alt="Backyard Homes Logo" class="h-20 mr-2">
+<span class="text-xl font-bold text-blue-800">Backyard Homes</span>
+</div>
+<p class="text-[#94a3b8] mb-4">
+Helping families be part of Austin's economic growth by adding beautiful, functional ADUs to their properties.
+</p>
+<div class="flex space-x-4">
+                        <a href="https://www.facebook.com/share/1DNZgXoFoK/?mibextid=wwXIfr" target="_blank" class="text-[#94a3b8] hover:text-white transition">
+<i data-feather="facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/txbackyardhomes/" target="_blank" class="text-gray-300 hover:text-white transition">
+                            <i data-feather="instagram"></i>
+                        </a>
+<a href="https://x.com/txbackyardhomes" target="_blank" class="text-gray-300 hover:text-white transition">
+                            <i data-feather="twitter"></i>
+                        </a>
+<a href="https://www.linkedin.com/company/backyardhomes/" target="_blank" class="text-gray-300 hover:text-white transition">
+    <i data-feather="linkedin"></i>
+</a>
+</div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-[#94a3b8] hover:text-white transition">About Us</a></li>
+                        <li><a href="#benefits" class="text-[#94a3b8] hover:text-white transition">Background</a></li>
+                        <li><a href="#process" class="text-[#94a3b8] hover:text-white transition">Our Process</a></li>
+                        <li><a href="#related" class="text-[#94a3b8] hover:text-white transition">Related</a></li>
+                        <li><a href="#survey" class="text-[#94a3b8] hover:text-white transition">Get Started</a></li>
+</ul>
+</div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <div class="space-y-3">
+                    <div class="flex items-start space-x-3">
+                        <i data-feather="mail" class="mt-1"></i>
+                        <span class="text-[#94a3b8]">txbackyardhomes@gmail.com</span>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <i data-feather="phone" class="mt-1"></i>
+                        <span class="text-[#94a3b8]">(512) 953-7908</span>
+</div>
+</div>
+                </div>
+            </div>
+            <div class="border-t border-[#1e293b] mt-10 pt-6 text-center text-[#64748b]">
+<p>&copy; 2025 Backyard Homes. All rights reserved.</p>
+</div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
